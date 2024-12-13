@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Modern font */
+  background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradient background */
+  color: #fff; /* White text color */
+}
+
+.coming-soon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+}
+
+.coming-soon {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 40px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.spinning-icon {
+  animation: spin 2s linear infinite; /* Spin animation */
+  margin-bottom: 20px; /* Space below the icon */
+}
+
+h2 {
+  font-size: 2.5em; /* Larger heading */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+p {
+  font-size: 1.2em; /* Slightly larger text */
+  margin-top: 10px; /* Space above the paragraph */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
