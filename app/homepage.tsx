@@ -1,6 +1,4 @@
 import React from 'react'
-import Header from './components/Header'
-import Footer from './components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHourglassHalf } from '@fortawesome/free-solid-svg-icons'
 import './homepage.css'
