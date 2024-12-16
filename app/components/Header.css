@@ -1,0 +1,98 @@
+/* app/components/Header.css */
+.header-container {
+    background: #0B2A0E;
+    color: white;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+}
+
+.header-button {
+    background: #ffffff;
+    color: #0B2A0E;
+    border: 2px solid #0B2A0E;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    margin-right: 10px;
+    width: 50px; /* Adjust the width to make the logo smaller */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.logo-text {
+    color: #1D2125;
+    text-align: left;
+    font-size: 12px; /* Set font size for logo text */
+}
+
+.nav-menu {
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    color: #1D2125;
+    cursor: pointer;
+    position: relative; /* For dropdown positioning */
+    font-size: 14px; /* Set font size for menu items */
+    display: flex; /* Use flex to align text and icon */
+    align-items: center; /* Center align items vertically */
+}
+
+.menu-icon {
+    margin-left: 5px; /* Space between text and icon */
+    width: 14px; /* Set the width of the icon */
+    height: 14px; /* Set the height of the icon */
+}
+
+.join-button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.iconssizes {
+    width: 16px;
+    height: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
