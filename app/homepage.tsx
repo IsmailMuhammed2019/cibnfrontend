@@ -8,7 +8,7 @@ function Homepage() {
     <div className="wrapper">
       <Header className="header" />
       <div className="content">
-        <h1>Your Main Content Here</h1>
+        <h1>Loading...</h1>
         {/* Add more content as needed */}
       </div>
       <Footer />
