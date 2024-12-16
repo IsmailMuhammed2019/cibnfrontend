@@ -51,6 +51,7 @@
 }
 
 .nav-menu {
+    display: flex; /* Default to flex for larger screens */
 }
 
 .nav-menu ul {
@@ -82,17 +83,51 @@
     border: none;
     padding: 10px 30px;
     border-radius: 5px;
-    cursor: pointer;
 }
+
 .iconssizes {
     width: 16px;
     height: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.contact-info{
+    margin-right: 20px;
+}
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 24px; /* Size of the hamburger icon */
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Hide the nav menu by default */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width */
+        background: #0B2A0E; /* Background color for the menu */
+        position: absolute; /* Position it absolutely */
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        z-index: 1000; /* Ensure it appears above other content */
+    }
+
+    .nav-menu.open {
+        display: flex; /* Show the menu when open */
+    }
+
     .nav-menu ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Space between items */
+        padding: 10px; /* Padding around the menu */
+    }
+
+    .hamburger {
+        display: block; /* Show the hamburger icon on mobile */
     }
 }
