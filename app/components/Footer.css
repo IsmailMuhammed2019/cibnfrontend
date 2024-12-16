@@ -1,8 +1,8 @@
 /* app/components/Footer.css */
 .footer {
     background-color: #0B2A0E; /* Set background color */
-    border-top-left-radius: 20px; /* Rounded corner for top left */
-    border-top-right-radius: 20px; /* Rounded corner for top right */
+    border-top-left-radius: 50px; /* Rounded corner for top left */
+    border-top-right-radius: 50px; /* Rounded corner for top right */
     padding: 50px; /* Padding for the footer */
     color: white; /* Default text color */
     position: relative; /* Position relative for absolute positioning of rights text */
