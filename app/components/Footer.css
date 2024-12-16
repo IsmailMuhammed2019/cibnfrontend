@@ -1,0 +1,28 @@
+/* app/components/Footer.css */
+.footer {
+    background-color: #0B2A0E; /* Set background color */
+    border-top-left-radius: 40px; /* Rounded corner for top left */
+    border-top-right-radius: 40px; /* Rounded corner for top right */
+    padding: 20px; /* Padding for the footer */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+}
+
+.footer-content {
+    max-width: 1200px; /* Optional: Set a max width */
+    margin: 0 auto; /* Center the content */
+}
+
+.footer-links {
+    margin-top: 10px; /* Space above links */
+}
+
+.footer-links a {
+    color: white; /* Link color */
+    margin: 0 10px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

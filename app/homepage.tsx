@@ -1,15 +1,19 @@
-import React from 'react'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faHourglassHalf } from '@fortawesome/free-solid-svg-icons'
-import './homepage.css'
-import Header from './components/Header'
-function homepage() {
+import React from 'react';
+import './homepage.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+function Homepage() {
   return (
-    <>
-      <Header />
-      <h1>.</h1>
-    </>
-  )
+    <div className="wrapper">
+      <Header className="header" />
+      <div className="content">
+        <h1>Your Main Content Here</h1>
+        {/* Add more content as needed */}
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
-export default homepage
+export default Homepage;
