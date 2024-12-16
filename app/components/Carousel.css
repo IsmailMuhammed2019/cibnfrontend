@@ -1,0 +1,74 @@
+/* app/components/Carousel.css */
+.carousel-container {
+    background-color: #F6F6F6; /* Background color of the div */
+    padding: 100px; /* Surrounding space */
+    position: relative; /* For positioning controls */
+}
+
+.carousel {
+    position: relative; /* For positioning controls */
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center the image vertically */
+}
+
+.carousel-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.carousel-controls {
+    position: absolute; /* Position controls over the carousel */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for half height */
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: space-between; /* Space between left and right buttons */
+    padding: 0 20px; /* Add padding to move controls out */
+}
+
+.carousel-button {
+    background-color: #D9D9D9; /* Background color for buttons */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Circle shape */
+    width: 40px; /* Width of the button */
+    height: 40px; /* Height of the button */
+    display: flex; /* Center the icon */
+    justify-content: center; /* Center the icon */
+    align-items: center; /* Center the icon */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 20px; /* Size of the chevron icon */
+    color: black; /* Chevron icon color */
+    transform: translateY(-50%); /* Move button half outside */
+}
+
+/* Adjust the position of the left and right buttons */
+.carousel-button.left {
+    position: relative; /* Position relative to the carousel */
+    left: -39px; /* Move left button outside */
+}
+
+.carousel-button.right {
+    position: relative; /* Position relative to the carousel */
+    right: -39px; /* Move right button outside */
+}
+
+.carousel-indicators {
+    display: flex; /* Align indicators horizontally */
+    justify-content: center; /* Center indicators */
+    margin-top: 10px; /* Space above indicators */
+}
+
+.indicator {
+    background-color: #D9D9D9; /* Background color for indicators */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Circle shape */
+    width: 10px; /* Width of the indicator */
+    height: 10px; /* Height of the indicator */
+    margin: 0 5px; /* Space between indicators */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.indicator.active {
+    background-color: #D1A745; /* Active indicator color */
+}
