@@ -22,3 +22,95 @@ html, body {
 .footer {
   margin-top: 20px; /* Space between content and footer */
 }
+
+.membership-section {
+    background-image: url('/imgs/background.jpeg'); /* Background image */
+    background-size: cover; /* Cover the entire section */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-position: center; /* Center the background image */
+    color: white; /* Text color */
+    height: 699px; /* Fixed height for larger screens */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.membership-content {
+    background: rgba(33, 33, 33, 0.7); /* Dark overlay for content */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding for the content */
+    border-radius: 8px; 
+    width: 100%; /* Full width for responsiveness */
+    height: 100%; /* Fill the membership-section */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+}
+
+.membership-container {
+    width: 100%; /* Full width of the content area */
+    max-width: 650px; /* Max width for larger screens */
+    margin: 0 auto; /* Center the container */
+}
+
+.membership-title {
+    color: green; /* Green color for title */
+    font-size: 40px; /* Larger font size for title */
+    margin-bottom: 20px; /* Space below title */
+    font-weight: bold;
+}
+
+.membership-subtext {
+    margin-bottom: 30px; /* Space below subtext */
+}
+
+.membership-buttons {
+    display: flex; /* Align buttons horizontally */
+    justify-content: center; /* Center buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+.join-button {
+    background-color: green; /* Green background for join button */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.learn-more-button {
+    background-color: transparent; /* No background color */
+    color: green; /* Green text */
+    border: 2px solid green; /* Green border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .membership-section {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .membership-title {
+        font-size: 28px; /* Smaller font size for title */
+    }
+
+    .membership-subtext {
+        font-size: 14px; /* Smaller font size for subtext */
+        padding: 0 10px; /* Add padding for smaller screens */
+    }
+
+    .membership-container {
+        width: 90%; /* Full width on smaller screens */
+        margin: 0 auto; /* Center the container */
+    }
+
+    .membership-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Space between buttons */
+    }
+}
