@@ -88,6 +88,84 @@ html, body {
     cursor: pointer; /* Pointer cursor on hover */
 }
 
+    .bigImage {
+        height: 900px; /* Adjust height as needed */
+        width: 100%; /* Full width of the container */
+        display: flex; /* Use flexbox for layout */
+        justify-content: center; /* Space between the two child divs */
+        align-items: center; /* Center vertically */
+    }
+    .prof {
+        width: 587px; /* Set width */
+        height: 800px; /* Set height */
+        display: flex; /* Use flexbox to center content */
+        justify-content: center; /* Center horizontally */
+        align-items: flex-start; /* Align items to the start to move the image down */
+        border-radius: 20px; /* Rounded corners */
+        overflow: hidden; /* Ensure the image does not overflow */
+        margin-right: 80px;
+    }
+
+    .prof img {
+        width: 100%; /* Full width of the container */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Cover the container */
+        border-radius: 20px; /* Rounded corners for the image */
+    }
+
+    .div1 {
+        background-color: #1D2125;
+        height: 380px;
+        width: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding: 30px;
+    }
+    .div2 {
+        background-color: #1D2125;
+        width: auto;
+        border-radius: 10px;
+        height: 380px;
+        padding: 30px;
+    }
+
+    .others {
+        background-image: url(/imgs/rectangle.png);
+        background-repeat: no-repeat;
+        background-size: 100px 100px; /* Set a specific size for the background image */
+        background-position: center left; /* Centers the background image */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack children vertically */
+        justify-content: center; /* Center content vertically */
+        gap: 20px; /* Space between the two inner divs */
+        width: 587px; /* Set width to match the .prof div */
+        margin-left: 20px; /* Adjust this value to move the divs to the left */
+        margin-top: 20px; /* Optional: Add margin to the top */
+        padding-left: 30px;
+    }
+    .title1 {
+        color: #D1A745;
+        font-size: 30px;
+    }
+
+    .subtitle {
+        color: #9CA3AB;
+        margin-top: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    }
+
+    .pagecode {
+        color: #fff;
+        margin-bottom: 20px;
+
+    }
+
+    .readmore {
+        color: green;
+        margin-top: 70px;
+    }
+    
 /* Responsive Styles */
 @media (max-width: 768px) {
     .membership-section {
