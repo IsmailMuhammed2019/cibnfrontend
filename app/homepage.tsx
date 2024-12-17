@@ -38,13 +38,13 @@ function Homepage() {
             <h2 className='subtitle'>Professor Pius Deji Olanrewaju, Ph.D, FCIB</h2>
             <p className='pagecode'>You are welcome to the official website of The Chartered Institute of Bankers of Nigeria (CIBN)...</p>
 
-            <button className='readmore'>Read More ></button>
+            <button className='readmore'>Read More &gt;</button>
           </div>
           <div className='div2'>
           <h1 className='title1'>2024 Calendar of Activities</h1>
             <h2 className='subtitle'>Our program and training courses are fashioned to sharpen your skills and broaden your knowledge of the Nigerian banking practices.</h2>
 
-            <button className='readmore'>Read More ></button>
+            <button className='readmore'>Read More &gt;</button>
           </div>
         </div>
       </div>
