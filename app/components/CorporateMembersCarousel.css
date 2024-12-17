@@ -1,0 +1,48 @@
+.members-carousel-container {
+    background-color: #F6F6F6; /* Background color of the carousel */
+    position: relative; /* For positioning controls */
+    overflow: hidden; /* Hide overflow */
+    width: 100%; /* Full width */
+}
+
+.members-carousel {
+    display: flex; /* Use flexbox for layout */
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+}
+
+.members-carousel-item {
+    min-width: 100%; /* Each item takes full width */
+    display: flex; /* Center the image */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.members-carousel-image {
+    max-width: 80%; /* Smaller image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.members-carousel-button {
+    background-color: #D9D9D9; /* Background color for buttons */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Circle shape */
+    width: 40px; /* Width of the button */
+    height: 40px; /* Height of the button */
+    display: flex; /* Center the icon */
+    justify-content: center; /* Center the icon */
+    align-items: center; /* Center the icon */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 20px; /* Size of the chevron icon */
+    color: black; /* Chevron icon color */
+    position: absolute; /* Position buttons over the carousel */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for half height */
+}
+
+.members-carousel-button.left {
+    left: 10px; /* Position left button */
+}
+
+.members-carousel-button.right {
+    right: 10px; /* Position right button */
+}

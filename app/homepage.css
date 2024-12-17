@@ -33,6 +33,7 @@ html, body {
     display: flex; /* Use flexbox for centering */
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
+    margin-top: 60px;
 }
 
 .membership-content {
@@ -141,7 +142,7 @@ html, body {
         width: 587px; /* Set width to match the .prof div */
         margin-left: 20px; /* Adjust this value to move the divs to the left */
         margin-top: 20px; /* Optional: Add margin to the top */
-        padding-left: 30px;
+        padding-left: 80px;
     }
     .title1 {
         color: #D1A745;
@@ -163,9 +164,27 @@ html, body {
 
     .readmore {
         color: green;
-        margin-top: 70px;
+        margin-top: 30px;
     }
-    
+
+    .readmore1 {
+        cursor: pointer;
+        color: green;
+        border-radius: 10px;
+        border: 1px solid green !important;
+        padding: 10px 20px;
+        width: 200px;
+        margin-top: 120px;
+        display: flex;
+    }
+
+    .download-image {
+        width: 20px; /* Adjust the width of the image */
+        height: auto; /* Maintain aspect ratio */
+        margin-left: 5px; /* Space between the text and the image */
+        vertical-align: middle; /* Align the image with the text */
+    }
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .membership-section {
@@ -191,4 +210,211 @@ html, body {
         flex-direction: column; /* Stack buttons vertically */
         gap: 10px; /* Space between buttons */
     }
+}
+
+.explore-container {
+    display: flex;
+    flex-direction: row; /* Stack sections vertically */
+    align-items: flex-start; /* Align items to the left */
+    justify-content: center;
+    margin: 60px 10px; /* Margin around the container */
+    background-color: white; /* White background for the entire container */
+    padding: 20px; /* Padding for the container */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.explore-header {
+    margin-bottom: 20px; /* Space below the header */
+    width: 587px;
+}
+
+.explore-title {
+    font-size: 30px; /* Font size for the title */
+    color: green; /* Title color */
+    margin: 10px 30px;
+}
+
+.explore-subtext {
+    font-size: 18px; /* Font size for the subtext */
+    color: #1D2125; /* Subtext color */
+    margin: 10px 30px;
+}
+
+.explore-content {
+    width: 700px;
+    padding: 30px;
+
+}
+
+.explore-section1 {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    margin: 10px 50px 50px 40px;
+
+}
+
+.explore-image {
+    width: 50px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between the image and text */
+}
+
+.explore-text {
+    flex: 1; /* Allow text to take remaining space */
+}
+
+.title2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.titleimage {
+    margin-bottom: 35px;
+}
+
+.downloadsection {
+    background-image: url(/imgs/strip.png);
+    background-color: #0B2A0E;
+    height: 1000px;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.apptitle {
+    color: #79F594;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.appsubtitle {
+    margin-left: 50px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.downloadapp {
+    display: flex
+    ;
+        width: 900px;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+}
+
+.appimage {
+    height: 650px;
+    margin: 40px;
+}
+
+.appbuttons {
+    width: 200px;
+}
+
+.buttonimages {
+    margin-top: 20px;
+}
+
+.buttonimages:hover{
+    border: solid 1 #fff;
+    border-radius: 10px;
+}
+
+.downloadimage {
+    max-width: 100%;
+    height: 100%;
+}
+
+.announcement {
+    background-image: url(/imgs/annoucebackgroun.jpg);
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    height: 100%;
+    background-size: cover;
+    padding: 50px;
+}
+
+.apptitle1 {
+    color: #288731;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.appsubtitle1 {
+    margin-left: 50px;
+    color:#48525B;    ;
+    font-size: 20px;
+}
+
+.annoucediv {
+    display: flex;
+        margin: 50px;
+        background: #fff;
+        padding: 30px;
+        border-radius: 20px;
+        justify-content: space-evenly;
+}
+
+.annoucetext {
+    padding: 50px;
+}
+
+.annoucetitle{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0px;
+    color: green;
+}
+
+.annoucesubtext {
+    width: 410px;
+    margin-bottom: 50px;
+}
+
+.annoucebutton {
+    font-weight: bold;
+
+}
+
+.annouceimg {
+    padding: 50px;
+    width: 800px;
+}
+
+.annouceimg1 {
+    margin-right: 50px;
+    width: 800px;
+    padding: 50px;
+}
+.annoucediv1 {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    background: #fff;
+        padding: 30px;
+        border-radius: 20px;
+        margin: 50px;
+}
+
+.annoucetext1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 450px;
+}
+
+.annoucebutton1 {
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+
+.sponsors {
+    padding: 50px;
 }

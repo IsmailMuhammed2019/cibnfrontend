@@ -1,8 +1,7 @@
-/* app/components/Carousel.css */
 .carousel-container {
     background-color: #F6F6F6; /* Background color of the div */
-    padding: 100px; /* Surrounding space */
     position: relative; /* For positioning controls */
+    overflow: hidden; /* Ensure that any overflow is hidden */
 }
 
 .carousel {
@@ -10,11 +9,14 @@
     display: flex;
     justify-content: center; /* Center the image */
     align-items: center; /* Center the image vertically */
+    width: 100%; /* Ensure the carousel takes full width */
+    height: 100%; /* Ensure the carousel takes full height */
 }
 
 .carousel-image {
-    max-width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Make the image fill the width of the container */
+    height: 100%; /* Make the image fill the height of the container */
+    object-fit: cover; /* Cover the entire area while maintaining aspect ratio */
 }
 
 .carousel-controls {
@@ -45,18 +47,17 @@
 /* Adjust the position of the left and right buttons */
 .carousel-button.left {
     position: relative; /* Position relative to the carousel */
-    left: -39px; /* Move left button outside */
 }
 
 .carousel-button.right {
     position: relative; /* Position relative to the carousel */
-    right: -39px; /* Move right button outside */
 }
 
 .carousel-indicators {
     display: flex; /* Align indicators horizontally */
     justify-content: center; /* Center indicators */
-    margin-top: 10px; /* Space above indicators */
+    margin-top: 20px; /* Space above indicators */
+    margin-bottom: 20px
 }
 
 .indicator {
