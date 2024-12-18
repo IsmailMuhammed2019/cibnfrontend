@@ -22,10 +22,21 @@ function Header() {
         </div>
         <div className="header-info">
           <span>Connect with us:</span>
-          <img src="/imgs/facebook.svg" alt="Facebook" className="iconssizes" />
-          <img src="/imgs/twitter.svg" alt="Twitter" className="iconssizes" />
-          <img src="/imgs/linkedln.svg" alt="LinkedIn" className="iconssizes" />
-          <img src="/imgs/youtube.svg" alt="YouTube" className="iconssizes" />
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="/imgs/facebook.svg" alt="Facebook" className="iconssizes" />
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="/imgs/twitter.svg" alt="Twitter" className="iconssizes" />
+          </a>
+          <a href="https://www.linkedin.com/in/cibnigeria?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+            <img src="/imgs/linkedln.svg" alt="LinkedIn" className="iconssizes" />
+          </a>
+          <a href="https://youtube.com/@thecibn?feature=shared" target="_blank" rel="noopener noreferrer">
+            <img src="/imgs/youtube.svg" alt="YouTube" className="iconssizes" />
+          </a>
+          <a href="https://www.instagram.com/cibnigeria?igsh=MXJ0NHo0d3I5MWdwNw==" target="_blank" rel="noopener noreferrer">
+            <img src="/imgs/instagram.svg" alt="Instagram" className="iconssizes" />
+          </a>
           <button className="header-button">Login</button>
         </div>
       </div>
