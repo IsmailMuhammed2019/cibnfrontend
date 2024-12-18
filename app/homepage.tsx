@@ -1,3 +1,4 @@
+"use client"
 // app/homepage.tsx
 import React from "react";
 import "./homepage.css";
