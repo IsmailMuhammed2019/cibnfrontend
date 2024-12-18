@@ -4,9 +4,7 @@ import "./homepage.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Carousel from "./components/Carousel"; // Import the Carousel component
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import CorporateMembersCarousel from "./components/CorporateMembersCarousel"; // Import the new component
+
 
 
 function Homepage() {
