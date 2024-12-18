@@ -1,0 +1,42 @@
+/* app/components/Sponsors.css */
+.sponsors-container {
+    padding: 20px; /* Padding for the section */
+    text-align: center; /* Center the logos */
+    padding: 5s0px 20px;
+}
+
+.sponsors-controls {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center logos vertically */
+    justify-content: center; /* Center controls */
+}
+
+.sponsors-logos {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center logos */
+    align-items: center; /* Center logos vertically */
+    overflow: hidden; /* Hide overflow for smooth transition */
+    width: 80%; /* Set a width for the logos container */
+}
+
+.sponsor-logo {
+    width: 300px;
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Space between logos */
+    transition: transform 0.5s ease; /* Smooth transition for movement */
+}
+
+.sponsor-control {
+    background-color: #D9D9D9; /* Background color for controls */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Circle shape */
+    width: 40px; /* Width of the button */
+    height: 40px; /* Height of the button */
+    display: flex; /* Center the icon */
+    justify-content: center; /* Center the icon */
+    align-items: center; /* Center the icon */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 20px; /* Size of the chevron icon */
+    color: black; /* Chevron icon color */
+    margin: 0 20px; /* Space between controls and logos */
+}

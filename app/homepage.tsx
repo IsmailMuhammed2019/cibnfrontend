@@ -4,6 +4,7 @@ import "./homepage.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Carousel from "./components/Carousel"; // Import the Carousel component
+import Sponsors from "./components/sponsors";
 
 
 
@@ -196,8 +197,11 @@ function Homepage() {
       <div className="sponsors">
       <h1 className="apptitle1">Corporate Members</h1>
       <p className="appsubtitle1">Meet our corporate members</p>
+      <Sponsors />
+
       </div>
 
+     
       <Footer />
     </div>
   );
