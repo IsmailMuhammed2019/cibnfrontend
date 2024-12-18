@@ -1,7 +1,8 @@
 "use client"; // Add this directive at the top
 
 import React, { useState } from 'react';
-import './Header.css'; // Import the CSS file
+import Link from 'next/link'; // Import Link from Next.js
+import '../styles/Header.css'; // Import the CSS file
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage menu visibility
@@ -43,19 +44,42 @@ function Header() {
         </button>
         <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
           <ul>
-            {['The Institute', 'Membership', 'Capacity Building & Certification', 'Learning', 'Resource Hub', 'Publication'].map((item) => (
-              <li key={item}>
-                {item} <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
-              </li>
-            ))}
-            <li>Events</li>
-            <li>Job Portal</li>
+            <li>
+              <Link href="/theinstitute">The Institute</Link>
+              <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
+            </li>
+            <li>
+              <Link href="/membership">Membership</Link>
+              <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
+            </li>
+            <li>
+              <Link href="/capacity-building">Capacity Building & Certification</Link>
+              <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
+            </li>
+            <li>
+              <Link href="/learning">Learning</Link>
+              <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
+            </li>
+            <li>
+              <Link href="/resource-hub">Resource Hub</Link>
+              <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
+            </li>
+            <li>
+              <Link href="/publications">Publication</Link>
+              <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
+            </li>
+            <li>
+              <Link href="/events">Events</Link>
+            </li>
+            <li>
+              <Link href="/job-portal">Job Portal</Link>
+            </li>
           </ul>
         </nav>
         <button className="join-button">Join CIBN</button>
       </div>
     </header>
-  )
+  );
 }
 
 export default Header;

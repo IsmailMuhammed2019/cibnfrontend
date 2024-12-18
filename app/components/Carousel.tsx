@@ -2,7 +2,7 @@
 
 // app/components/Carousel.js
 import React, { useState, useEffect } from 'react';
-import './Carousel.css'; // Import the CSS file for styling
+import '../styles/Carousel.css'; // Import the CSS file for styling
 
 const images = [
   '/imgs/1.png',

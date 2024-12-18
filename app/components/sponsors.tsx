@@ -1,7 +1,7 @@
 "use client"
 // app/components/Sponsors.js
 import React, { useEffect, useState } from 'react';
-import './Sponsors.css'; // Import the CSS file for styling
+import '../styles/Sponsors.css'; // Import the CSS file for styling
 
 const images = [
     'gtb.png', 'access.png', 'aeb.png', 'cibn.png', 'citi.png',
