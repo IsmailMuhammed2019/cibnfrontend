@@ -34,9 +34,6 @@ function Header() {
           <a href="https://youtube.com/@thecibn?feature=shared" target="_blank" rel="noopener noreferrer">
             <img src="/imgs/youtube.svg" alt="YouTube" className="iconssizes" />
           </a>
-          <a href="https://www.instagram.com/cibnigeria?igsh=MXJ0NHo0d3I5MWdwNw==" target="_blank" rel="noopener noreferrer">
-            <img src="/imgs/instagram.svg" alt="Instagram" className="iconssizes" />
-          </a>
           <button className="header-button">Login</button>
         </div>
       </div>
