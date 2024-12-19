@@ -1,6 +1,6 @@
 // app/pages/theinstitute.tsx
 import React from 'react';
-import Layout from '../layout/Layout'; // Adjust the path as necessary
+import Layout from '../../layout/Layout'; // Adjust the path as necessary
 
 const TheInstitute = () => {
     return (

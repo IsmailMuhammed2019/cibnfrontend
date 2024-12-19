@@ -131,3 +131,8 @@
         display: block; /* Show the hamburger icon on mobile */
     }
 }
+
+/* Update the hover effect for menu items */
+.nav-menu ul li:hover {
+  color: green !important; /* Change text color to green on hover */
+}

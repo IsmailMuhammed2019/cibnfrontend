@@ -40,13 +40,13 @@ function Header() {
 
       {/* Navigation Bar */}
       <div className="nav-container">
-        <div className="logo">
+      <Link href="/"><div className="logo">
           <img src="/imgs/logo.png" alt="Logo" className="logo-image" />
           <div className="logo-text">
             <span>The Chartered Institute</span><br />
             <span>Of Bankers Of Nigeria</span>
           </div>
-        </div>
+        </div></Link>
         <button className="hamburger" onClick={toggleMenu}>
           &#9776; {/* Hamburger icon */}
         </button>
