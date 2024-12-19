@@ -171,9 +171,7 @@ function Header() {
             </li>
           </ul>
         </nav>
-        <a href="https://portal.cibng.org/cb_apply.asp">
-          <button className="join-button">Join CIBN</button>
-        </a>
+        <a href="https://portal.cibng.org/cb_apply.asp">  Join CIBA</a>
       </div>
 
       {/* Institute Menu Section */}
