@@ -34,7 +34,7 @@ function Header() {
           <a href="https://youtube.com/@thecibn?feature=shared" target="_blank" rel="noopener noreferrer">
             <img src="/imgs/youtube.svg" alt="YouTube" className="iconssizes" />
           </a>
-          <button className="header-button">Login</button>
+          <Link href={'/pages/login'}><button className="header-button">Login</button></Link>
         </div>
       </div>
 
