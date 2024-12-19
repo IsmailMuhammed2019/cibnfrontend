@@ -84,7 +84,7 @@ function Header() {
             </li>
           </ul>
         </nav>
-        <button className="join-button">Join CIBN</button>
+        <Link href={'/pages/signup'}><button className="join-button">Join CIBN</button></Link>
       </div>
     </header>
   );
