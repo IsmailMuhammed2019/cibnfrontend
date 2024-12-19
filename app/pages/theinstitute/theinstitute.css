@@ -195,13 +195,15 @@ width: 50%;
     background-color: #f7fafb;
     border-radius: 20px;
 }
-li {
-    margin-left: 20px;
-    color: #212121;
+
+.thelatest-content-right1 ul li {  
     text-align: left;
+    margin-left: 20px;
+    color: #212121;                             
+    list-style-type: disc;
 }
 
-.thelatest-content3-right ul {  
+.thelatest-content-right ul li {  
     text-align: left;
     margin-left: 20px;
     color: #212121;                             
