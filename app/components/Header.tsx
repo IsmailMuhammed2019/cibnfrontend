@@ -7,6 +7,7 @@ import '../styles/Header.css'; // Import the CSS file
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage menu visibility
   const [isInstituteOpen, setIsInstituteOpen] = useState(false); // State for "The Institute" section
+  const [isMembershipOpen, setIsMembershipOpen] = useState(false); // State for "Membership" section
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,6 +15,10 @@ function Header() {
 
   const toggleInstituteMenu = () => {
     setIsInstituteOpen(!isInstituteOpen);
+  };
+
+  const toggleMembershipMenu = () => {
+    setIsMembershipOpen(!isMembershipOpen);
   };
 
   return (
@@ -59,32 +64,50 @@ function Header() {
         </button>
         <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
           <ul>
-            <li>
+            <li onClick={toggleInstituteMenu}>
               <Link href="/pages/theinstitute">The Institute</Link>
-              <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" onClick={toggleInstituteMenu} />
+              <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
             </li>
-            <li>
+            <li onMouseEnter={toggleMembershipMenu} onMouseLeave={toggleMembershipMenu}>
               <Link href="/pages/membership">Membership</Link>
               <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
+              {isMembershipOpen && (
+                <div className="membership-dropdown">
+                  <ul>
+                    <li><Link href="/pages/membership-overview">Overview</Link></li>
+                    <li><Link href="/pages/membership-individual">Individual Members</Link></li>
+                    <li><Link href="/pages/membership-corporate">Corporate Members</Link></li>
+                    <li><Link href="/pages/membership-benefits">Benefits of Membership</Link></li>
+                    <li><Link href="/pages/manage-membership">Manage Your Membership</Link></li>
+                    <li><Link href="/pages/membership-fees">Subscription Fees and Renewal</Link></li>
+                    <li><Link href="/pages/apply-fellowship">Apply for Fellowship</Link></li>
+                    <li><Link href="/pages/practice-license">Practice License</Link></li>
+                    <li><Link href="/pages/find-banker">Find a Banker</Link></li>
+                    <li><Link href="/pages/directory-individual">Directory of CIBN Individual Members</Link></li>
+                    <li><Link href="/pages/bank-directory">Bank Directory</Link></li>
+                    <li><Link href="/pages/membership-login">Membership Login</Link></li>
+                  </ul>
+                </div>
+              )}
             </li>
             <li>
               <Link href="/pages/capacitybuildingandcertification">Capacity Building & Certification</Link>
               <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
             </li>
             <li>
-              <Link href="/pages/learning">Learning</Link>
+              <Link href="/learning">Learning</Link>
               <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
             </li>
             <li>
-              <Link href="/pages/resourcehub">Resource Hub</Link>
+              <Link href="/resource-hub">Resource Hub</Link>
               <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
             </li>
             <li>
-              <Link href="/pages/publication">Publication</Link>
+              <Link href="/publications">Publication</Link>
               <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
             </li>
             <li>
-              <Link href="/pages/events">Events</Link>
+              <Link href="/events">Events</Link>
             </li>
             <li>
               <Link href="/job-portal">Job Portal</Link>
@@ -97,37 +120,37 @@ function Header() {
       {/* Institute Menu Section - Moved Outside Header */}
       {isInstituteOpen && (
         <div className="institute-menu">
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>CIBN</h4>
-          <Link href="/pages/theinstitute"><span>Corporate Information</span></Link>
-          <Link href="/pages/theinstitute"><span>Vision & Core Values</span></Link>
-          <Link href="/pages/theinstitute"><span>Chartered Status & Membership</span></Link>
-          <Link href="/pages/theinstitute"><span>Principal Responsibilities & Objectives</span></Link>
-          <Link href="/pages/theinstitute"><span>Ethics & Professionalism</span></Link>
-          <Link href="/pages/theinstitute"><span>CIBN Codes, Act, Rules & Regulations</span></Link>
-          <Link href="/pages/theinstitute"><span>CIBN Anthem</span></Link>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>CIBN</h4>
+            <Link href="/pages/theinstitute"><span>Corporate Information</span></Link>
+            <Link href="/pages/theinstitute"><span>Vision & Core Values</span></Link>
+            <Link href="/pages/theinstitute"><span>Chartered Status & Membership</span></Link>
+            <Link href="/pages/theinstitute"><span>Principal Responsibilities & Objectives</span></Link>
+            <Link href="/pages/theinstitute"><span>Ethics & Professionalism</span></Link>
+            <Link href="/pages/theinstitute"><span>CIBN Codes, Act, Rules & Regulations</span></Link>
+            <Link href="/pages/theinstitute"><span>CIBN Anthem</span></Link>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Officers</h4>
+            <Link href="/pages/theinstitute"><span>Organizational Structure</span></Link>
+            <Link href="/pages/theinstitute"><span>Members of Governing Council</span></Link>
+            <Link href="/pages/theinstitute"><span>Office Holders</span></Link>
+            <Link href="/pages/theinstitute"><span>Executive Management</span></Link>
+            <Link href="/pages/theinstitute"><span>Past Presidents & Registrars</span></Link>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Annex</h4>
+            <Link href="/pages/theinstitute"><span>Subsidiaries</span></Link>
+            <Link href="/pages/theinstitute"><span>Affiliations</span></Link>
+            <Link href="/pages/theinstitute"><span>Branch Directory</span></Link>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Others</h4>
+            <Link href="/pages/theinstitute"><span>Attestation Form</span></Link>
+            <Link href="/pages/theinstitute"><span>CIBN Whistleblowing Policy</span></Link>
+            <Link href="/pages/theinstitute"><span>Photo Gallery</span></Link>
+          </div>
         </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>Officers</h4>
-          <Link href="/pages/theinstitute"><span>Organizational Structure</span></Link>
-          <Link href="/pages/theinstitute"><span>Members of Governing Council</span></Link>
-          <Link href="/pages/theinstitute"><span>Office Holders</span></Link>
-          <Link href="/pages/theinstitute"><span>Executive Management</span></Link>
-          <Link href="/pages/theinstitute"><span>Past Presidents & Registrars</span></Link>
-        </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>Annex</h4>
-          <Link href="/pages/theinstitute"><span>Subsidiaries</span></Link>
-          <Link href="/pages/theinstitute"><span>Affiliations</span></Link>
-          <Link href="/pages/theinstitute"><span>Branch Directory</span></Link>
-        </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>Others</h4>
-          <Link href="/pages/theinstitute"><span>Attestation Form</span></Link>
-          <Link href="/pages/theinstitute"><span>CIBN Whistleblowing Policy</span></Link>
-          <Link href="/pages/theinstitute"><span>Photo Gallery</span></Link>
-        </div>
-      </div>
       )}
     </header>
   );
