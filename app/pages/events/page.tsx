@@ -2,8 +2,7 @@
 import React from 'react';
 import Layout from '../../layout/Layout'; // Adjust the path as necessary
 import Sponsors from '@/app/components/sponsors';
-
-const Learning = () => {
+const Events = () => {
     return (
         <Layout>
             <h1>Coming Soon</h1>
@@ -13,4 +12,4 @@ const Learning = () => {
     );
 };
 
-export default Learning;
+export default Events;

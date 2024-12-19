@@ -72,19 +72,19 @@ function Header() {
               <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
             </li>
             <li>
-              <Link href="/learning">Learning</Link>
+              <Link href="/pages/learning">Learning</Link>
               <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
             </li>
             <li>
-              <Link href="/resource-hub">Resource Hub</Link>
+              <Link href="/pages/resourcehub">Resource Hub</Link>
               <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
             </li>
             <li>
-              <Link href="/publications">Publication</Link>
+              <Link href="/pages/publication">Publication</Link>
               <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
             </li>
             <li>
-              <Link href="/events">Events</Link>
+              <Link href="/pages/events">Events</Link>
             </li>
             <li>
               <Link href="/job-portal">Job Portal</Link>
