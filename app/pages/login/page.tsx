@@ -49,6 +49,7 @@ const Login: React.FC = () => {
                                 type="button"
                                 className="view-password"
                                 onClick={() => setShowPassword(!showPassword)}
+                                title="Toggle password visibility"
                             >
                                 <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
                             </button>

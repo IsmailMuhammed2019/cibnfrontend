@@ -6,9 +6,14 @@ import '../styles/Header.css'; // Import the CSS file
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage menu visibility
+  const [isInstituteOpen, setIsInstituteOpen] = useState(false); // State for "The Institute" section
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleInstituteMenu = () => {
+    setIsInstituteOpen(!isInstituteOpen);
   };
 
   return (
@@ -40,13 +45,15 @@ function Header() {
 
       {/* Navigation Bar */}
       <div className="nav-container">
-      <Link href="/"><div className="logo">
-          <img src="/imgs/logo.png" alt="Logo" className="logo-image" />
-          <div className="logo-text">
-            <span>The Chartered Institute</span><br />
-            <span>Of Bankers Of Nigeria</span>
+        <Link href="/">
+          <div className="logo">
+            <img src="/imgs/logo.png" alt="Logo" className="logo-image" />
+            <div className="logo-text">
+              <span>The Chartered Institute</span><br />
+              <span>Of Bankers Of Nigeria</span>
+            </div>
           </div>
-        </div></Link>
+        </Link>
         <button className="hamburger" onClick={toggleMenu}>
           &#9776; {/* Hamburger icon */}
         </button>
@@ -54,14 +61,14 @@ function Header() {
           <ul>
             <li>
               <Link href="/pages/theinstitute">The Institute</Link>
+              <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" onClick={toggleInstituteMenu} />
+            </li>
+            <li>
+              <Link href="/pages/membership">Membership</Link>
               <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
             </li>
             <li>
-              <Link href="/membership">Membership</Link>
-              <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
-            </li>
-            <li>
-              <Link href="/capacity-building">Capacity Building & Certification</Link>
+              <Link href="/pages/capacitybuildingandcertification">Capacity Building & Certification</Link>
               <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
             </li>
             <li>
@@ -86,6 +93,42 @@ function Header() {
         </nav>
         <Link href={'/pages/signup'}><button className="join-button">Join CIBN</button></Link>
       </div>
+
+      {/* Institute Menu Section - Moved Outside Header */}
+      {isInstituteOpen && (
+        <div className="institute-menu">
+        <div className="menu-section">
+          <h4 style={{ color: 'green' }}>CIBN</h4>
+          <Link href="/pages/theinstitute"><span>Corporate Information</span></Link>
+          <Link href="/pages/theinstitute"><span>Vision & Core Values</span></Link>
+          <Link href="/pages/theinstitute"><span>Chartered Status & Membership</span></Link>
+          <Link href="/pages/theinstitute"><span>Principal Responsibilities & Objectives</span></Link>
+          <Link href="/pages/theinstitute"><span>Ethics & Professionalism</span></Link>
+          <Link href="/pages/theinstitute"><span>CIBN Codes, Act, Rules & Regulations</span></Link>
+          <Link href="/pages/theinstitute"><span>CIBN Anthem</span></Link>
+        </div>
+        <div className="menu-section">
+          <h4 style={{ color: 'green' }}>Officers</h4>
+          <Link href="/pages/theinstitute"><span>Organizational Structure</span></Link>
+          <Link href="/pages/theinstitute"><span>Members of Governing Council</span></Link>
+          <Link href="/pages/theinstitute"><span>Office Holders</span></Link>
+          <Link href="/pages/theinstitute"><span>Executive Management</span></Link>
+          <Link href="/pages/theinstitute"><span>Past Presidents & Registrars</span></Link>
+        </div>
+        <div className="menu-section">
+          <h4 style={{ color: 'green' }}>Annex</h4>
+          <Link href="/pages/theinstitute"><span>Subsidiaries</span></Link>
+          <Link href="/pages/theinstitute"><span>Affiliations</span></Link>
+          <Link href="/pages/theinstitute"><span>Branch Directory</span></Link>
+        </div>
+        <div className="menu-section">
+          <h4 style={{ color: 'green' }}>Others</h4>
+          <Link href="/pages/theinstitute"><span>Attestation Form</span></Link>
+          <Link href="/pages/theinstitute"><span>CIBN Whistleblowing Policy</span></Link>
+          <Link href="/pages/theinstitute"><span>Photo Gallery</span></Link>
+        </div>
+      </div>
+      )}
     </header>
   );
 }

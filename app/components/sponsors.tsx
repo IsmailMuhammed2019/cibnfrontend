@@ -29,6 +29,9 @@ const Sponsors = () => {
     }, []);
 
     return (
+        <div className="sponsors">
+      <h1 className="apptitle1">Corporate Members</h1>
+      <p className="appsubtitle1">Meet our corporate members</p>
         <div className="sponsors-container">
             <div className="sponsors-controls">
                 <button className="sponsor-control left" onClick={() => setCurrentIndex((prevIndex) => (prevIndex - 1 + (images.length - logosToShow + 1)) % (images.length - logosToShow + 1))}>&#10094;</button>
@@ -39,6 +42,7 @@ const Sponsors = () => {
                 </div>
                 <button className="sponsor-control right" onClick={nextLogos}>&#10095;</button>
             </div>
+        </div>
         </div>
     );
 };

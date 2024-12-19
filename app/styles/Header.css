@@ -52,6 +52,7 @@
 
 .nav-menu {
     display: flex; /* Default to flex for larger screens */
+    position: relative; /* Set position relative to allow absolute positioning of the dropdown */
 }
 
 .nav-menu ul {
@@ -135,4 +136,49 @@
 /* Update the hover effect for menu items */
 .nav-menu ul li:hover {
   color: green !important; /* Change text color to green on hover */
+}
+
+.institute-menu {
+    display: flex; /* Align items horizontally */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    gap: 10px; /* Space between sections */
+    margin-top: 5px; /* Space above the menu */
+    padding: 10px; /* Optional padding */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border: 1px solid #ccc; /* Border for definition */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: absolute; /* Position it absolutely */
+    left: 30%; /* Center it horizontally */
+    transform: translateX(-50%); /* Shift it left by half its width */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: column; /* Stack items vertically within each section */
+    align-items: flex-start; /* Align items to the start */
+    padding: 5px; /* Reduced padding inside each section */
+    border-bottom: 1px solid #e0e0e0; /* Divider between sections */
+}
+
+.menu-section:last-child {
+    border-bottom: none; /* Remove border from the last section */
+}
+
+.menu-section h4 {
+    color: green; /* Title color */
+    margin-bottom: 5px; /* Space below the title */
+    font-size: 14px; /* Reduced font size for section titles */
+}
+
+.menu-section span {
+    margin: 3px 0; /* Space between items */
+    cursor: pointer; /* Pointer cursor for items */
+    transition: color 0.3s; /* Smooth color transition */
+    font-size: 12px; /* Reduced font size for menu items */
+}
+
+.menu-section span:hover {
+    color: green; /* Change color on hover */
 }

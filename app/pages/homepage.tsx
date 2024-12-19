@@ -192,13 +192,8 @@ function Homepage() {
         </div>
 
       </div>
-
-      <div className="sponsors">
-      <h1 className="apptitle1">Corporate Members</h1>
-      <p className="appsubtitle1">Meet our corporate members</p>
       <Sponsors />
 
-      </div>
     </div>
   );
 }
