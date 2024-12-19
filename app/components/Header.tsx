@@ -8,7 +8,7 @@ import '../styles/Header.css'; // Import the CSS file
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage menu visibility
   const [isInstituteOpen, setIsInstituteOpen] = useState(false); // State for "The Institute" section
-  const [ismembershipOpen, setIsMembershipOpen] = useState(false); // State for "Membership" section
+  const [isMembershipOpen, setIsMembershipOpen] = useState(false); // State for "Membership" section
   const [isCapacityBuildingOpen, setIsCapacityBuildingOpen] = useState(false); // State for "Capacity Building & Certification" section
   const [isLearningOpen, setIsLearningOpen] = useState(false); // State for "Learning" section
   const [isResourceHubOpen, setIsResourceHubOpen] = useState(false); // State for "Resource Hub" section
@@ -21,26 +21,56 @@ function Header() {
 
   const toggleInstituteMenu = () => {
     setIsInstituteOpen(!isInstituteOpen);
+    setIsMembershipOpen(false);
+    setIsCapacityBuildingOpen(false);
+    setIsLearningOpen(false);
+    setIsResourceHubOpen(false);
+    setIsPublicationOpen(false);
   };
 
   const toggleMembershipMenu = () => {
-    setIsMembershipOpen(!ismembershipOpen);
+    setIsMembershipOpen(!isMembershipOpen);
+    setIsInstituteOpen(false);
+    setIsCapacityBuildingOpen(false);
+    setIsLearningOpen(false);
+    setIsResourceHubOpen(false);
+    setIsPublicationOpen(false);
   };
 
   const toggleCapacityBuildingMenu = () => {
     setIsCapacityBuildingOpen(!isCapacityBuildingOpen);
+    setIsInstituteOpen(false);
+    setIsMembershipOpen(false);
+    setIsLearningOpen(false);
+    setIsResourceHubOpen(false);
+    setIsPublicationOpen(false);
   };
 
   const toggleLearningMenu = () => {
     setIsLearningOpen(!isLearningOpen);
+    setIsInstituteOpen(false);
+    setIsMembershipOpen(false);
+    setIsCapacityBuildingOpen(false);
+    setIsResourceHubOpen(false);
+    setIsPublicationOpen(false);
   };
 
   const toggleResourceHubMenu = () => {
     setIsResourceHubOpen(!isResourceHubOpen);
+    setIsInstituteOpen(false);
+    setIsMembershipOpen(false);
+    setIsCapacityBuildingOpen(false);
+    setIsLearningOpen(false);
+    setIsPublicationOpen(false);
   };
 
   const togglePublicationMenu = () => {
     setIsPublicationOpen(!isPublicationOpen);
+    setIsInstituteOpen(false);
+    setIsMembershipOpen(false);
+    setIsCapacityBuildingOpen(false);
+    setIsLearningOpen(false);
+    setIsResourceHubOpen(false);
   };
 
   // Close dropdowns when clicking outside
@@ -87,7 +117,9 @@ function Header() {
           <a href="https://youtube.com/@thecibn?feature=shared" target="_blank" rel="noopener noreferrer">
             <img src="/imgs/youtube.svg" alt="YouTube" className="iconssizes" />
           </a>
-          <Link href={'/pages/login'}><button className="header-button">Login</button></Link>
+          <a href="https://portal.cibng.org/cb_login.asp">
+            <button className="header-button">Login</button>
+          </a>
         </div>
       </div>
 
@@ -139,85 +171,85 @@ function Header() {
             </li>
           </ul>
         </nav>
-        <Link href={'/pages/signup'}><button className="join-button">Join CIBN</button></Link>
+        <a href="https://portal.cibng.org/cb_apply.asp">
+          <button className="join-button">Join CIBN</button>
+        </a>
       </div>
 
-      {/* Institute Menu Section - Moved Outside Header */}
+      {/* Institute Menu Section */}
       {isInstituteOpen && (
         <div className="institute-menu">
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>CIBN</h4>
-          <Link href="/pages/theinstitute"><span>Corporate Information</span></Link>
-          <Link href="/pages/theinstitute"><span>Vision & Core Values</span></Link>
-          <Link href="/pages/theinstitute"><span>Chartered Status & Membership</span></Link>
-          <Link href="/pages/theinstitute"><span>Principal Responsibilities & Objectives</span></Link>
-          <Link href="/pages/theinstitute"><span>Ethics & Professionalism</span></Link>
-          <Link href="/pages/theinstitute"><span>CIBN Codes, Act, Rules & Regulations</span></Link>
-          <Link href="/pages/theinstitute"><span>CIBN Anthem</span></Link>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>CIBN</h4>
+            <Link href="/pages/theinstitute"><span>Corporate Information</span></Link>
+            <Link href="/pages/theinstitute"><span>Vision & Core Values</span></Link>
+            <Link href="/pages/theinstitute"><span>Chartered Status & Membership</span></Link>
+            <Link href="/pages/theinstitute"><span>Principal Responsibilities & Objectives</span></Link>
+            <Link href="/pages/theinstitute"><span>Ethics & Professionalism</span></Link>
+            <Link href="/pages/theinstitute"><span>CIBN Codes, Act, Rules & Regulations</span></Link>
+            <Link href="/pages/theinstitute"><span>CIBN Anthem</span></Link>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Officers</h4>
+            <Link href="/pages/theinstitute"><span>Organizational Structure</span></Link>
+            <Link href="/pages/theinstitute"><span>Members of Governing Council</span></Link>
+            <Link href="/pages/theinstitute"><span>Office Holders</span></Link>
+            <Link href="/pages/theinstitute"><span>Executive Management</span></Link>
+            <Link href="/pages/theinstitute"><span>Past Presidents & Registrars</span></Link>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Annex</h4>
+            <Link href="/pages/theinstitute"><span>Subsidiaries</span></Link>
+            <Link href="/pages/theinstitute"><span>Affiliations</span></Link>
+            <Link href="/pages/theinstitute"><span>Branch Directory</span></Link>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Others</h4>
+            <Link href="/pages/theinstitute"><span>Attestation Form</span></Link>
+            <Link href="/pages/theinstitute"><span>CIBN Whistleblowing Policy</span></Link>
+            <Link href="/pages/theinstitute"><span>Photo Gallery</span></Link>
+          </div>
         </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>Officers</h4>
-          <Link href="/pages/theinstitute"><span>Organizational Structure</span></Link>
-          <Link href="/pages/theinstitute"><span>Members of Governing Council</span></Link>
-          <Link href="/pages/theinstitute"><span>Office Holders</span></Link>
-          <Link href="/pages/theinstitute"><span>Executive Management</span></Link>
-          <Link href="/pages/theinstitute"><span>Past Presidents & Registrars</span></Link>
-        </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>Annex</h4>
-          <Link href="/pages/theinstitute"><span>Subsidiaries</span></Link>
-          <Link href="/pages/theinstitute"><span>Affiliations</span></Link>
-          <Link href="/pages/theinstitute"><span>Branch Directory</span></Link>
-        </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>Others</h4>
-          <Link href="/pages/theinstitute"><span>Attestation Form</span></Link>
-          <Link href="/pages/theinstitute"><span>CIBN Whistleblowing Policy</span></Link>
-          <Link href="/pages/theinstitute"><span>Photo Gallery</span></Link>
-        </div>
-      </div>
       )}
-      {/* Institute Menu Section - Moved Outside Header */}
-      {ismembershipOpen && (
+
+      {/* Membership Menu Section */}
+      {isMembershipOpen && (
         <div className="membership-menu">
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>MememberShip</h4>
-          <Link href="/pages/theinstitute"><span>Overview</span></Link>
-          <Link href="/pages/theinstitute"><span>Individual Members</span></Link>
-          <Link href="/pages/theinstitute"><span>Coperate Members</span></Link>
-          <Link href="/pages/theinstitute"><span>Benefits of Membership</span></Link>
-
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Membership</h4>
+            <Link href="/pages/theinstitute"><span>Overview</span></Link>
+            <Link href="/pages/theinstitute"><span>Individual Members</span></Link>
+            <Link href="/pages/theinstitute"><span>Corporate Members</span></Link>
+            <Link href="/pages/theinstitute"><span>Benefits of Membership</span></Link>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Manage Your Membership</h4>
+            <Link href="/pages/theinstitute"><span>Subscription Fees and Renewal</span></Link>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Apply for Fellowship</h4>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Practice License</h4>
+            <Link href="/pages/theinstitute"><span>Overview</span></Link>
+            <Link href="/pages/theinstitute"><span>Policy, Rules and Regulation</span></Link>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Find a Banker</h4>
+            <Link href="/pages/theinstitute"><span>Directory of CIBN Individual Members</span></Link>
+            <Link href="/pages/theinstitute"><span>Bank Directory</span></Link>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Membership Login</h4>
+          </div>
         </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>MANAGE YOUR MEMBERSHIP</h4>
-          <Link href="/pages/theinstitute"><span>Subscription Fees and Renewal</span></Link>
- 
-        </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>APPLY FOR FELLOWSHIP</h4>
-        </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>PRACTICE LICENSE</h4>
-          <Link href="/pages/theinstitute"><span>Overview</span></Link>
-          <Link href="/pages/theinstitute"><span>Policy, Rules and Regulation</span></Link>
-          <Link href="/pages/theinstitute"><span></span></Link>
-        </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>FIND A BANKER</h4>
-          <Link href="/pages/theinstitute"><span>Directory of CIBN Individual Members</span></Link>
-          <Link href="/pages/theinstitute"><span>Bank Directory</span></Link>
-        </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>MEMBERSHIP LOGIN </h4>
-        </div>
-      </div>
       )}
 
-      {/* Examinations Menu Section */}
+      {/* Capacity Building Menu Section */}
       {isCapacityBuildingOpen && (
         <div className="capacity-building-menu">
           <div className="menu-section">
-            <h4 style={{ color: 'green' }}>EXAMINATIONS</h4>
+            <h4 style={{ color: 'green' }}>Examinations</h4>
             <Link href="/pages/examinations-overview"><span>Overview</span></Link>
             <Link href="/pages/associateship-examination"><span>Associateship (ACIB) Examination</span></Link>
             <Link href="/pages/micro-finance-certification"><span>Micro-Finance Certification Program (MCP)</span></Link>
@@ -229,26 +261,26 @@ function Header() {
             <Link href="/pages/examination-time-table"><span>Examination Time Table</span></Link>
           </div>
           <div className="menu-section">
-            <h4 style={{ color: 'green' }}>EXEMPTIONS</h4>
+            <h4 style={{ color: 'green' }}>Exemptions</h4>
             <Link href="/pages/exemptions-guidelines"><span>Exemptions Guidelines and Fees</span></Link>
             <Link href="/pages/exemption-accredited-academies"><span>Exemption For Accredited Bank Academies</span></Link>
             <Link href="/pages/exemption-policy"><span>Exemption Policy</span></Link>
           </div>
           <div className="menu-section">
-            <h4 style={{ color: 'green' }}>STUDENT AFFAIRS</h4>
+            <h4 style={{ color: 'green' }}>Student Affairs</h4>
             <Link href="/pages/examination-appeal-process"><span>Examination Appeal Process</span></Link>
             <Link href="/pages/transcripts-statements"><span>Issuance of Transcripts and Statements of Result</span></Link>
           </div>
           <div className="menu-section">
-            <h4 style={{ color: 'green' }}>CHARTERED BANKER MBA</h4>
+            <h4 style={{ color: 'green' }}>Chartered Banker MBA</h4>
             {/* Add links as needed */}
           </div>
           <div className="menu-section">
-            <h4 style={{ color: 'green' }}>E-PAYMENT CERTIFICATION PROGRAMME</h4>
+            <h4 style={{ color: 'green' }}>E-Payment Certification Programme</h4>
             {/* Add links as needed */}
           </div>
           <div className="menu-section">
-            <h4 style={{ color: 'green' }}>COMPETENCY FRAMEWORK</h4>
+            <h4 style={{ color: 'green' }}>Competency Framework</h4>
             <Link href="/pages/introduction-to-cf"><span>Introduction To CF</span></Link>
             <Link href="/pages/accredited-institutions"><span>List of Accredited Institutions</span></Link>
             <Link href="/pages/linkage-institutions"><span>List of Linkage Institutions</span></Link>
@@ -257,75 +289,76 @@ function Header() {
             <Link href="/pages/etsp-providers"><span>Accredited Educational Training Service Providers (ETSPs)</span></Link>
           </div>
           <div className="menu-section">
-            <h4 style={{ color: 'green' }}>LOCAL AND INTERNATIONAL COLLABORATIONS</h4>
+            <h4 style={{ color: 'green' }}>Local and International Collaborations</h4>
             {/* Add links as needed */}
           </div>
         </div>
       )}
 
-
-{isLearningOpen && (
+      {/* Learning Menu Section */}
+      {isLearningOpen && (
         <div className="learning-menu">
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>E-LEARNING</h4>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>E-Learning</h4>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>CCPD</h4>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Library</h4>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Conferences</h4>
+          </div>
         </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>CCPD</h4>
-        </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>LIBRARY</h4>
-        </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>CONFERENCES </h4>
-        </div>
-      </div>
       )}
-
 
       {/* Resource Library Menu Section */}
       {isResourceHubOpen && (
         <div className="resource-library-menu">
           <div className="menu-section">
-            <h4 style={{ color: 'green' }}>RESOURCE LIBRARY</h4>
+            <h4 style={{ color: 'green' }}>Resource Library</h4>
             <Link href="/pages/journal-of-banking"><span>Journal Of Banking</span></Link>
             <Link href="/pages/nigerian-bankers"><span>Nigerian Bankers</span></Link>
             <Link href="/pages/cibn-communiques"><span>CIBN Communiques</span></Link>
             <Link href="/pages/cibn-codes-downloads"><span>CIBN Codes, Acts, Rules Downloads</span></Link>
           </div>
           <div className="menu-section">
-            <h4 style={{ color: 'green' }}>ANNUAL REPORT</h4>
+            <h4 style={{ color: 'green' }}>Annual Report</h4>
             <Link href="/pages/institutes-report"><span>Institute's Report</span></Link>
           </div>
           <div className="menu-section">
-            <h4 style={{ color: 'green' }}>QUESTIONNAIRE</h4>
+            <h4 style={{ color: 'green' }}>Questionnaire</h4>
             <Link href="/pages/human-resources"><span>Human Resources and MDs / Examiners</span></Link>
             <Link href="/pages/others"><span>Others</span></Link>
           </div>
           <div className="menu-section">
-            <h4 style={{ color: 'green' }}>CIBN BOOK SHOP</h4>
+            <h4 style={{ color: 'green' }}>CIBN Book Shop</h4>
             <Link href="/pages/book-search"><span>Book Search</span></Link>
           </div>
           <div className="menu-section">
-            <h4 style={{ color: 'green' }}>DOWNLOADS</h4>
+            <h4 style={{ color: 'green' }}>Downloads</h4>
             {/* Add links as needed */}
           </div>
         </div>
       )}
+
+      {/* Publication Menu Section */}
       {isPublicationOpen && (
         <div className="publication-menu">
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>NEWS</h4>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>News</h4>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Press Releases</h4>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Speeches</h4>
+          </div>
+          <div className="menu-section">
+            <h4 style={{ color: 'green' }}>Announcements</h4>
+          </div>
         </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>PRESS RELEASES</h4>
-        </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>SPEECHE</h4>
-        </div>
-        <div className="menu-section">
-          <h4 style={{ color: 'green' }}>ANNOUNCEMENTS </h4>
-        </div>
-      </div>
       )}
     </header>
   );
