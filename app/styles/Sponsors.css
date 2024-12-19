@@ -45,3 +45,18 @@
 .sponsor-control:hover {
     background-color: #B0B0B0; /* Darker shade on hover */
 }
+
+.apptitle1 {
+    color: #288731;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.appsubtitle1 {
+    margin-left: 50px;
+    color:#48525B;    ;
+    font-size: 20px;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../layout/Layout"; // Adjust the path as necessary
 import "./theinstitute.css"; // Import the CSS file for specific styles
+import Sponsors from "@/app/components/sponsors";
 
 const TheInstitute = () => {
   return (
@@ -189,6 +190,7 @@ const TheInstitute = () => {
           </div>
         </div>
       </div>
+      <Sponsors />
     </Layout>
   );
 };
