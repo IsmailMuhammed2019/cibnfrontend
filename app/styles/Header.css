@@ -144,7 +144,6 @@
     gap: 10px; /* Space between sections */
     padding: 10px; /* Optional padding */
     background-color: #f9f9f9; /* Light background for contrast */
-    border: 1px solid #ccc; /* Border for definition */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     position: absolute; /* Position it absolutely */
@@ -159,12 +158,66 @@
     gap: 10px; /* Space between sections */
     padding: 10px; /* Optional padding */
     background-color: #f9f9f9; /* Light background for contrast */
-    border: 1px solid #ccc; /* Border for definition */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     position: absolute; /* Position it absolutely */
-    left: 30%; /* Center it horizontally */
+    left: 40%; /* Center it horizontally */
     transform: translateX(-50%); /* Shift it left by half its width */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+.capacity-building-menu {
+    display: flex; /* Align items horizontally */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    gap: 10px; /* Space between sections */
+    padding: 10px; /* Optional padding */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: absolute; /* Position it absolutely */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Shift it left by half its width */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.learning-menu {
+    display: flex; /* Align items horizontally */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    gap: 10px; /* Space between sections */
+    padding: 10px; /* Optional padding */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: absolute; /* Position it absolutely */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Shift it left by half its width */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.resource-library-menu {
+    display: flex; /* Align items horizontally */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    gap: 10px; /* Space between sections */
+    padding: 10px; /* Optional padding */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: absolute; /* Position it absolutely */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Shift it left by half its width */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.publication-menu {
+    display: flex; /* Align items horizontally */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    gap: 10px; /* Space between sections */
+    padding: 10px; /* Optional padding */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: absolute; /* Position it absolutely */
+    left: 65%; /* Center it horizontally */
+    transform: translateX(-30%); /* Shift it left by half its width */
     z-index: 1000; /* Ensure it appears above other content */
 }
 
@@ -173,7 +226,7 @@
     flex-direction: column; /* Stack items vertically within each section */
     align-items: flex-start; /* Align items to the start */
     padding: 5px; /* Reduced padding inside each section */
-    border-bottom: 1px solid #e0e0e0; /* Divider between sections */
+
 }
 
 .menu-section:last-child {
@@ -191,6 +244,7 @@
     cursor: pointer; /* Pointer cursor for items */
     transition: color 0.3s; /* Smooth color transition */
     font-size: 12px; /* Reduced font size for menu items */
+    color: #000000;
 }
 
 .menu-section span:hover {
