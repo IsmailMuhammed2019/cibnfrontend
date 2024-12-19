@@ -53,7 +53,7 @@ function Header() {
         <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
           <ul>
             <li>
-              <Link href="/theinstitute">The Institute</Link>
+              <Link href="/pages/theinstitute">The Institute</Link>
               <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" />
             </li>
             <li>

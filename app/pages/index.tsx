@@ -1,12 +1,14 @@
-import React from 'react'
-import Homepage from './homepage'  
+// app/pages/index.tsx
+import React from 'react';
+import Layout from '../layout/Layout'; // Adjust the path as necessary
+import Homepage from './homepage';
 
-function index() {
-  return (
-    <div>
-        <Homepage />
-    </div>
-  )
-}
+const Index = () => {
+    return (
+        <Layout>
+            <Homepage />
+        </Layout>
+    );
+};
 
-export default index
+export default Index;

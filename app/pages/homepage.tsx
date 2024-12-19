@@ -13,7 +13,6 @@ import Sponsors from "../components/sponsors";
 function Homepage() {
   return (
     <div className="wrapper">
-      <Header />
       <Carousel />
 
       {/* New Membership Section Below Carousel */}
@@ -202,9 +201,6 @@ function Homepage() {
       <Sponsors />
 
       </div>
-
-     
-      <Footer />
     </div>
   );
 }
