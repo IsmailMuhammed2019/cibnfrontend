@@ -98,3 +98,24 @@ text-align: left;
     text-align: left;
     margin-bottom: 20px;
 }
+
+.corevalues {
+    background-color: #fff;
+    height: fit-content;
+    padding: 80px;
+}
+
+.corevalues-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.corevalues-content-item {
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+}
+.corevalues-content-item img {
+    margin: 10px auto;
+}

@@ -35,6 +35,28 @@ const TheInstitute = () => {
                     </div>
                 </div>
             </div>
+            <div className='corevalues'>
+                    <h1 className='theinstitute-coperate-title'>The CIBN Core Values</h1>
+                    <p>Here are out core values</p>
+                    <div className='corevalues-content'>
+                        <div className='corevalues-content-item'>
+                            <img src="/imgs/integrity.svg" alt="Core values" />
+                            <h2>Integrity</h2>
+                        </div>
+                        <div className='corevalues-content-item'>
+                            <img src="/imgs/professionalism.svg" alt="Core values" />
+                            <h2>Professionalism</h2>
+                        </div>
+                        <div className='corevalues-content-item'>
+                            <img src="/imgs/Innovation.svg" alt="Core values" />
+                            <h2>Innovation</h2>
+                        </div> 
+                        <div className='corevalues-content-item'>
+                            <img src="/imgs/Ethics.svg" alt="Core values" />
+                            <h2>Ethics</h2>
+                        </div>
+                    </div>
+                </div>
         </Layout>
     );
 };
