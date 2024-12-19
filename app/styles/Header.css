@@ -142,7 +142,21 @@
     display: flex; /* Align items horizontally */
     flex-wrap: wrap; /* Allow wrapping if necessary */
     gap: 10px; /* Space between sections */
-    margin-top: 5px; /* Space above the menu */
+    padding: 10px; /* Optional padding */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border: 1px solid #ccc; /* Border for definition */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: absolute; /* Position it absolutely */
+    left: 30%; /* Center it horizontally */
+    transform: translateX(-50%); /* Shift it left by half its width */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.membership-menu {
+    display: flex; /* Align items horizontally */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    gap: 10px; /* Space between sections */
     padding: 10px; /* Optional padding */
     background-color: #f9f9f9; /* Light background for contrast */
     border: 1px solid #ccc; /* Border for definition */
