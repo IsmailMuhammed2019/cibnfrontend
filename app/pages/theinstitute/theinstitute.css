@@ -43,6 +43,7 @@ padding: 80px;
     width: 16px; /* Set width for the icon */
     height: 16px; /* Set height for the icon */
     color: #d1a745;
+    margin-left: 10px;
 }
 .theinstitutetitle {
     color: #d1a745;
@@ -55,4 +56,45 @@ text-align: left;
     color: white; /* Set the color for the paragraph */
     text-align: left;
     margin-bottom: 50px;
+}
+
+
+.theinstitute-coperate {
+    background-color: #fff;
+    height: fit-content;
+    padding: 80px;
+}
+.theinstitute-coperate-title {
+    color: green;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.theinstitute-coperate p {
+    color: #212121;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.theinstitute-coperate-content {
+    display: flex;
+    justify-content: space-between;
+}
+.theinstitute-coperate-content-left {
+    width: 50%;
+    padding-right: 100px;
+}
+.theinstitute-coperate-content-right {
+    width: 50%;
+    padding-left: 100px;
+
+}
+.theinstitute-coperate-content-right-img {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+}
+.theinstitute-coperate-content-left p {
+    color: #212121;
+    text-align: left;
+    margin-bottom: 20px;
 }
