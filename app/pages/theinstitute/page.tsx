@@ -58,7 +58,7 @@ const TheInstitute = () => {
               in Nigeria and esprit-de-corps among professional bankers.
             </p>
             <p>
-              Thirteen (13) years after being successfully run as a local center
+              Thirteen years after being successfully run as a local center
               and having gained considerable administrative experience and
               recorded significant success in training and educating its
               members, the Institute was registered in 1976 as the Nigerian
@@ -128,7 +128,7 @@ const TheInstitute = () => {
               records of the legion of successes recorded in the few years of
               the Institute&apos;s existence. Furthermore, it provides for a change
               in nomenclature from Nigerian Institute of Bankers to the
-              Chartered Institute of Bankers of Nigeria (CIBN).
+              Chartered Institute of Bankers of Nigeria.
             </p>
           </div>
           <div className="thelatest-content-left">
