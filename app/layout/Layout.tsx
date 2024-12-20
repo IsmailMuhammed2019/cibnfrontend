@@ -1,5 +1,4 @@
 "use client"
-
 // app/layout/Layout.tsx
 import React from 'react';
 import Header from '../components/Header'; // Adjust the path as necessary
