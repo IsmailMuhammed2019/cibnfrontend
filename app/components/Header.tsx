@@ -253,7 +253,7 @@ function Header() {
             <Link href="/pages/micro-finance-certification"><span>Micro-Finance Certification Program (MCP)</span></Link>
             <Link href="/pages/certification-programmes"><span>Certification Programmes</span></Link>
             <Link href="/pages/examination-forms"><span>Examination Forms</span></Link>
-            <Link href="/pages/examiners-report"><span>Examiner's Report</span></Link>
+            <Link href="/pages/examiners-report"><span>Examiner&rsquo;s Report</span></Link>
             <Link href="/pages/examination-rules"><span>Examination Rules and Regulations</span></Link>
             <Link href="/pages/examination-centres"><span>Examination Centres</span></Link>
             <Link href="/pages/examination-time-table"><span>Examination Time Table</span></Link>
@@ -323,7 +323,7 @@ function Header() {
           </div>
           <div className="menu-section">
             <h4 style={{ color: 'green' }}>Annual Report</h4>
-            <Link href="/pages/institutes-report"><span>Institute's Report</span></Link>
+            <Link href="/pages/institutes-report"><span>Institute&rsquo;s Report</span></Link>
           </div>
           <div className="menu-section">
             <h4 style={{ color: 'green' }}>Questionnaire</h4>
