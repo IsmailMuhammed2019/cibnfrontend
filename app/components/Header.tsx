@@ -117,6 +117,9 @@ function Header() {
           <a href="https://youtube.com/@thecibn?feature=shared" target="_blank" rel="noopener noreferrer">
             <img src="/imgs/youtube.svg" alt="YouTube" className="iconssizes" />
           </a>
+          <a href="https://www.instagram.com/cibn.nigeria/" target="_blank" rel="noopener noreferrer">
+            <img src="/imgs/instagram.svg" alt="Instagram" className="iconssizes" />
+          </a>
           <a href="https://portal.cibng.org/cb_login.asp">
             <button className="header-button">Login</button>
           </a>
