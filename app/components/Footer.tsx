@@ -20,10 +20,21 @@ function Footer() {
           </div>
           <h3 className="footer-heading">Connect with us</h3>
           <div className="social-icons">
-            <img src="/imgs/facebook.svg" alt="Facebook" className="iconssizes" />
-            <img src="/imgs/twitter.svg" alt="Twitter" className="iconssizes" />
-            <img src="/imgs/linkedln.svg" alt="LinkedIn" className="iconssizes" />
-            <img src="/imgs/youtube.svg" alt="YouTube" className="iconssizes" />
+          <a href="https://www.facebook.com/cibnigeria/" target="_blank" rel="noopener noreferrer">
+                        <img src="/imgs/facebook.svg" alt="Facebook" className="iconssizes" />
+                    </a>
+                    <a href="https://x.com/cibnigeria/status/1845847106780528998" target="_blank" rel="noopener noreferrer">
+                        <img src="/imgs/twitter.svg" alt="Twitter" className="iconssizes" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/cibnigeria?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+                        <img src="/imgs/linkedln.svg" alt="LinkedIn" className="iconssizes" />
+                    </a>
+                    <a href="https://youtube.com/@thecibn?feature=shared" target="_blank" rel="noopener noreferrer">
+                        <img src="/imgs/youtube.svg" alt="YouTube" className="iconssizes" />
+                    </a>
+                    <a href="https://www.instagram.com/cibnigeria/" target="_blank" rel="noopener noreferrer">
+                        <img src="/imgs/instagram.png" alt="Instagram" className="iconssizes" />
+                    </a>
           </div>
         </div>
         <div className="footer-column">

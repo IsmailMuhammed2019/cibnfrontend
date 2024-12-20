@@ -105,10 +105,10 @@ function Header() {
         </div>
         <div className="header-info">
           <span>Connect with us:</span>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/cibnigeria/" target="_blank" rel="noopener noreferrer">
             <img src="/imgs/facebook.svg" alt="Facebook" className="iconssizes" />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/cibnigeria/status/1845847106780528998" target="_blank" rel="noopener noreferrer">
             <img src="/imgs/twitter.svg" alt="Twitter" className="iconssizes" />
           </a>
           <a href="https://www.linkedin.com/in/cibnigeria?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
@@ -117,7 +117,7 @@ function Header() {
           <a href="https://youtube.com/@thecibn?feature=shared" target="_blank" rel="noopener noreferrer">
             <img src="/imgs/youtube.svg" alt="YouTube" className="iconssizes" />
           </a>
-          <a href="https://www.instagram.com/cibn.nigeria/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/cibnigeria/" target="_blank" rel="noopener noreferrer">
             <img src="/imgs/instagram.png" alt="Instagram" className="iconssizes" />
           </a>
           <a href="https://portal.cibng.org/cb_login.asp">
