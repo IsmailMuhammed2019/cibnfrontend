@@ -166,3 +166,68 @@ border: 1px solid grey;
     margin-bottom: 20px;
 }
 
+.associateship {
+    padding: 60px;
+    background-color: #f5f5f5;
+}
+
+.associateship-upper {
+    display: flex;
+justify-content: flex-start;
+margin-bottom: 20px;
+padding: 0 30px;
+}
+
+.associateship-upper h1 {
+    font-size: 30px;
+color: green;
+margin-bottom: 20px;
+padding: 40px;
+
+}
+
+.associateship-lower {
+    display: flex; /* Use flexbox for lower section */
+    justify-content: space-between; /* Space between left and right sections */
+}
+
+.associateship-lower-left,
+.associateship-lower-right {
+    width: 48%; /* Set width to allow space between the two sections */
+    padding: 10px; /* Optional: Add padding for better spacing */
+}
+
+.associateship-lower-left p,
+.associateship-lower-right p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.associateship-lower-left h2,
+.associateship-lower-right h2 {
+    margin: 10px 0 5px; /* Space above and below the titles */
+    font-weight: bold; /* Make titles bold */
+}
+
+.associateship-lower-lowest {
+    margin-top: 20px; /* Space above the lowest section */
+}
+
+.associateship-lower-lowest p {
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+.route1 {
+    padding: 10px 30px;
+background-color: #D1A745;
+margin: 30px 30px;
+}
+
+.route2 {
+    padding: 10px 30px;
+margin: 30px 30px;
+}
+
+.route3 {
+    padding: 10px 30px;
+margin: 30px 30px;
+}
