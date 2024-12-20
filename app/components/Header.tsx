@@ -300,10 +300,10 @@ function Header() {
       {isLearningOpen && (
         <div className="learning-menu">
           <div className="menu-section">
-            <h4 style={{ color: 'green' }}>E-Learning</h4>
+            <a href="http://94.237.54.119:8001"><h4 style={{ color: 'green' }}>E-Learning</h4></a>
           </div>
           <div className="menu-section">
-            <h4 style={{ color: 'green' }}>CCPD</h4>
+            <a href="http://94.237.54.119:8001"><h4 style={{ color: 'green' }}>CCPD</h4></a>
           </div>
           <div className="menu-section">
             <h4 style={{ color: 'green' }}>Library</h4>
