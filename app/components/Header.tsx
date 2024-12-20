@@ -118,7 +118,7 @@ function Header() {
             <img src="/imgs/youtube.svg" alt="YouTube" className="iconssizes" />
           </a>
           <a href="https://www.instagram.com/cibn.nigeria/" target="_blank" rel="noopener noreferrer">
-            <img src="/imgs/instagram.svg" alt="Instagram" className="iconssizes" />
+            <img src="/imgs/instagram.png" alt="Instagram" className="iconssizes" />
           </a>
           <a href="https://portal.cibng.org/cb_login.asp">
             <button className="header-button">Login</button>
@@ -155,7 +155,7 @@ function Header() {
               <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" onClick={toggleCapacityBuildingMenu} />
             </li>
             <li>
-              <Link href="/pages/learning">Learning</Link>
+              <a href="http://94.237.54.119:8001">Learning</a>
               <img src="/imgs/dropdown.svg" alt="Dropdown" className="menu-icon" onClick={toggleLearningMenu} />
             </li>
             <li>
@@ -170,7 +170,7 @@ function Header() {
               <Link href="/events">Events</Link>
             </li>
             <li>
-              <Link href="/job-portal">Job Portal</Link>
+              <a href="http://94.237.54.119:8000">Job Portal</a>
             </li>
           </ul>
         </nav>

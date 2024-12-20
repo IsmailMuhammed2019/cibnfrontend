@@ -250,3 +250,7 @@
 .menu-section span:hover {
     color: green; /* Change color on hover */
 }
+
+.instagram-icon path {
+    fill: white; /* Change the fill color to white */
+}
