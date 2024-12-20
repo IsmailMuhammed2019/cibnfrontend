@@ -41,8 +41,8 @@ const CorporateMembersCarousel: React.FC = () => {
                     </div>
                 ))}
             </div>
-            <button className="members-carousel-button left" onClick={prevImage}>❮</button>
-            <button className="members-carousel-button right" onClick={nextImage}>❯</button>
+            <button className="members-carousel-button left" onClick={prevImage}>&lsquo;</button>
+            <button className="members-carousel-button right" onClick={nextImage}>&rsquo;</button>
         </div>
     );
 };

@@ -126,7 +126,7 @@ const TheInstitute = () => {
               ethics through sanctions of erring members. The promulgation of
               this enabling decree is no doubt in recognition of the untainted
               records of the legion of successes recorded in the few years of
-              the Institute’s existence. Furthermore, it provides for a change
+              the Institute&apos;s existence. Furthermore, it provides for a change
               in nomenclature from Nigerian Institute of Bankers to the
               Chartered Institute of Bankers of Nigeria (CIBN).
             </p>
