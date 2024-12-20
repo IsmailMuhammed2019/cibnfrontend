@@ -117,7 +117,7 @@ const TheInstitute = () => {
           <div className="thelatest-content-right">
             <h2>Chartered Status</h2>
             <p>
-              The most significant landmark in the Institute’s history is the
+              The most significant landmark in the Institute&apos;s history is the
               attainment of a Chartered Status, achieved on May 18th, 1990 by
               the Federal Government Act No. 12 of 1990. Published in official
               gazette No. 27 of May 18, 1990, the Decree gives backing to the
@@ -185,7 +185,7 @@ const TheInstitute = () => {
               <li>3. Extend Global Positioning & Activities.</li>
               <li>4. Upgrade & Expand Certification and Learning Activities.</li>
               <li>5. Reactivate Old Members & Attract New Members.</li>
-              <li>6. Enhance Operational Efficiency & Organisational Synergy.</li>
+              <li>6. Enhance Operational Efficiency & Organisational Synergy.</li>
             </ul>
           </div>
         </div>
