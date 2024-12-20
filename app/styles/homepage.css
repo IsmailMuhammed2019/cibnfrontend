@@ -267,6 +267,7 @@ html, body {
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 20px;
+    color: #1D2125;
 }
 
 .titleimage {
@@ -417,4 +418,14 @@ html, body {
 
 .sponsors {
     padding: 50px;
+}
+.explore-container h1 {
+    font-size: 30px;
+    color: green;
+    font-weight: bold;
+}
+
+.explore-container p {
+    font-size: 18px;
+    color: #1D2125;
 }

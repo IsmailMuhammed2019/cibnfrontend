@@ -13,7 +13,7 @@ function Header() {
   const [isLearningOpen, setIsLearningOpen] = useState(false); // State for "Learning" section
   const [isResourceHubOpen, setIsResourceHubOpen] = useState(false); // State for "Resource Hub" section
   const [isPublicationOpen, setIsPublicationOpen] = useState(false); // State for "Publication" section
-  const headerRef = useRef(null); // Ref for the header
+  const headerRef = useRef<HTMLDivElement | null>(null); // Ref for the header
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -75,8 +75,8 @@ function Header() {
 
   // Close dropdowns when clicking outside
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (headerRef.current && !headerRef.current.contains(event.target)) {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
         setIsInstituteOpen(false);
         setIsMembershipOpen(false);
         setIsCapacityBuildingOpen(false);
@@ -171,7 +171,7 @@ function Header() {
             </li>
           </ul>
         </nav>
-        <a href="https://portal.cibng.org/cb_apply.asp">  Join CIBA</a>
+        <a href="https://portal.cibng.org/cb_apply.asp">Join CIBN</a>
       </div>
 
       {/* Institute Menu Section */}
