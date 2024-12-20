@@ -59,8 +59,197 @@ text-align: left;
 }
 
 .membership-overview {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Center items vertically */
+    justify-content: space-between; /* Space between image and text */
+    padding: 60px; /* Add some padding */
     background-color: #ffffff;
+    margin-top: 60px;
+}
+
+.overview {
+    display: flex;
+    margin: 30px;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.overview-image {
+    width: 50%; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+.overview-text {
+    max-width: 600px; /* Limit the width of the text */
+    padding: 20px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.overview-text h1 {
+    margin-bottom: 30px; /* Space below the heading */
+    text-align: left;
+    color: green;
+    font-size: 30px;    
+    font-weight: bold;
+}
+
+.overview-text p {
+    margin-bottom: 20px; /* Space below paragraphs */
+    text-align: left;
+    color: #212121;
+    line-height: 1.7;
+}
+
+.overview-image-container {
+    width: 400px;
+    height: 400px;
+    background-image: url('/imgs/lady.jpeg');
+    background-size: cover;
+    background-position: center top;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.keyboard {
+  background-image: url('/imgs/keyboard.jpeg');
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;  
+
+}
+
+.keyboard-inside {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-color: #000000E5;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+
+}
+
+.keyboard-inside-left {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}   
+.keyboard-inside-right {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.keyboard-inside-left h1 {
+    color: green;
+font-size: 30px;
+font-weight: bold;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+.keyboard-inside-left p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.keyboard-inside-right p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.keyboard-inside-right h2 {
+    color: green;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.keyboard-inside-right-a {
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 40px;
+}
+.keyboard-inside-right-text1 a {
+    color: rgb(11, 38, 135);
+    text-decoration: none;
+    font-size: 14px;
+}
+.keyboard-inside-right-text2 {
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.keyboard-inside-right-text2 a {
+    color: rgb(11, 38, 135);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.individualmember {
+    display: flex;
+    flex-direction: row; /* Stack items vertically */
+    align-items: flex-start; /* Center items horizontally */
+    background-color: #ffffff;
+    height: auto; /* Allow height to adjust based on content */
+    width: 100%;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.individual-member-text {
+    width: 100%; /* Full width */
+    max-width: 600px; /* Set a max width for better readability */
+    margin: 0 auto; /* Center the text block */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: left; /* Center text */
+}
+
+.individual-member-text h2 {
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.individual-member-text p {
+    color: #212121;
+    font-size: 16px;
+    text-align: left; /* Center text */
+}
+
+.membership-table {
+    width: 100%; /* Full width */
+    max-width: 600px; /* Set a max width for the table */
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+.membership-table table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+.table-title {
+    background: #D1A745; /* Background color for title */
+    color: black; /* Text color for title */
+    text-align: left; /* Align text to the left */
+    padding: 10px; /* Padding for title */
+}
+
+.description-header, .fee-header {
+    background: grey; /* Light background for headers */
+    padding: 10px; /* Padding for headers */
+    text-align: left; /* Align text to the left */
+    margin-top: 20px;
+}
+
+.membership-table td {
+    padding: 20px; /* Padding for table cells */
+    border-bottom: 1px solid grey; /* Border color for cells */
+    color: #212121;
 }
