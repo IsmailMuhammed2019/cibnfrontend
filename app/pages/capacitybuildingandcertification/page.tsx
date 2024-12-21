@@ -139,31 +139,32 @@ const CapacityBuildingAndCertification = () => {
         <h2 className="route">Banking Professional Exams</h2>
         <h2 className="route">Syllabus & Fees</h2>
     </div>
+    <p>Currently, there are seven (7) routes to the Flagship ACIB qualifications:</p>
     <div className="associateship-lower">
-        <p>Currently, there are seven (7) routes to the Flagship ACIB qualifications:</p>
+        
         <div className="associateship-lower-left">
-            <h2>Regular Route:</h2>
+            <h2 className="headline">Regular Route:</h2>
             <p>This route is open to holders of the Institute\’s Diploma, HND/BSc, MSc, MBA, Ph.D. etc. as well as recognized professional qualifications.</p>
-            <h2>Linkage Route:</h2>
+            <h2 className="headline">Linkage Route:</h2>
             <p>The route allows graduates of Banking & Finance and other Social and Management Sciences, specifically Business Administration, Accounting, Economics and Marketing of a partnering institution to be examined in a few subjects in the institute\’s banking professional examinations.</p>
-            <h2>Practitioners Route:</h2>
+            <h2 className="headline">Practitioners Route:</h2>
             <p>This route allows practitioners who have spent not less than 10 years and have attained a minimum of manager grade with relevant academic/professional qualifications to be examined in few subjects and qualify as professional bankers (ACIB).</p>
-            <h2>Chartered Banker MBA Route:</h2>
+            <h2 className="headline">Chartered Banker MBA Route:</h2>
             <p>This route employs a flexible and blending learning approach and affords candidates who go through it to graduate with three (3) qualifications simultaneously i.e. MBA Bangor, ACIB (Nigeria) and ACIB (Scotland). <a href="#">Click here to apply for the Chartered Banker MBA.</a></p>
         </div>
         <div className="associateship-lower-right">
-            <h2>Certification Route:</h2>
+            <h2 className="headline">Certification Route:</h2>
             <p>Candidates who aspire to have the ACIB qualification could use the Certification Route. The institute presently offers Certification Programmes in 16 subject areas. This route requires the successful completion of relevant Certification programme against which exemptions are allowed in the flagship ACIB examinations.</p>
-            <h2>Bank Academy Route:</h2>
+            <h2 className="headline">Bank Academy Route:</h2>
             <p>The route affords graduates of CIBN Accredited Academies generous exemptions in the institutes banking professional examinations to qualify as professional bankers (ACIB).</p>
-            <h2>M.SC/ACIB Route:</h2>
+            <h2 className="headline">M.SC/ACIB Route:</h2>
             <p>This route affords graduates the privilege of running one programme and graduating with two qualifications, i.e. MSc/MBA and ACIB.</p>
         </div>
-        <div className="associateship-lower-lowest">
+    </div>
+    <div className="associateship-lower-lowest">
             <p>You can <a href="#">click here</a> to download the Banking Professional [ACIB] Examination Form</p>
             <p>Kindly <a href="#">click here</a> to download the new ACIB syllabus</p>
         </div>
-    </div>
 </div>
 
       <Sponsors />

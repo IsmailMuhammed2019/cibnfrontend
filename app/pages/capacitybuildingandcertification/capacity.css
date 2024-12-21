@@ -189,6 +189,7 @@ padding: 40px;
 .associateship-lower {
     display: flex; /* Use flexbox for lower section */
     justify-content: space-between; /* Space between left and right sections */
+    padding: 30px;
 }
 
 .associateship-lower-left,
@@ -222,12 +223,18 @@ background-color: #D1A745;
 margin: 30px 30px;
 }
 
-.route2 {
+.route {
     padding: 10px 30px;
 margin: 30px 30px;
 }
 
-.route3 {
+.route {
     padding: 10px 30px;
 margin: 30px 30px;
+}
+
+.headline {
+    color: green;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
