@@ -1,0 +1,59 @@
+/* app/pages/TheInstitute.css */
+.theinstitute {
+    background-image: url('/imgs/resourcehub.jpg'); /* Set the background image */
+    height: 632px; /* Set the height */
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the background image */
+}
+
+.theinstitute-main {
+    background: linear-gradient(90deg, #212121 14.02%, rgba(33, 33, 33, 0.737628) 40.29%, rgba(33, 33, 33, 0) 81.98%);
+    height: 100%; /* Ensure it takes the full height of the parent */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-start;
+align-items: center;
+padding: 80px;
+}
+
+.theinstitute-content {
+    text-align: center; /* Center the text */
+}
+
+.theinstitute-content h1 {
+    color: #D1A745; /* Set the color for the heading */
+}
+
+.theinstitute-content p {
+    color: white; /* Set the color for the paragraph */
+}
+
+.theinstitute-content button {
+    border: 2px solid #D1A745; /* Set border color */
+    color: #D1A745; /* Set text color */
+    background: none; /* No background */
+    padding: 10px 20px; /* Add some padding */
+    cursor: pointer; /* Change cursor on hover */
+    display: flex; /* Use flexbox for button content */
+    align-items: center; /* Center icon vertically */
+    border-radius: 10px;
+}
+
+.dropdown-icon {
+    margin-left: 8px; /* Space between text and icon */
+    width: 16px; /* Set width for the icon */
+    height: 16px; /* Set height for the icon */
+    color: #d1a745;
+    margin-left: 10px;
+}
+.theinstitutetitle {
+    color: #d1a745;
+font-size: 40px;
+margin-bottom: 20px;
+text-align: left;
+}
+
+.theinstitute-content p {
+    color: white; /* Set the color for the paragraph */
+    text-align: left;
+    margin-bottom: 50px;
+}
